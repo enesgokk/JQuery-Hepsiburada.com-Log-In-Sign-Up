@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+    <div class="container">
+  
+        <div class="mainBorder">
+             <ul class="tabs">
+                <div class="row btnArea">
+                    <div class="col">
+                        <li class="giris tab-link  current" data-tab="tab-1">Giriş Yap</li>
+                    </div>
+                    <div class="col">
+                        <li class="uyeOl tab-link " data-tab="tab-2">Üye Ol</li>
+                    </div>
+                </div>
+      
+    </ul>
+
+    <div id="tab-1" class="tab-content current">
+      <div class="epostaGiris">
+          <input id="epostaInput" class="eposta" type="email" placeholder="E-posta adresi">
+          <p id="uyariYaziMail" class="uyariYaziMail"></p>
+
+      </div>
+
+      <div class="row sifreGiris">
+        <div class="col-10">
+          <input id="sifreInput" class="sifre" type="password" placeholder="Şifre">
+           <p class="uyariYazi" id="uyariYazi"></p>
+        </div>
+          <div class="col-2">
+            <img id="eye" class="eye" src="images/eye.png" alt="">
+         
+          </div>
+      </div>
+
+      <div>
+          <button id="girisYapBtn" class="girisYap" >Giriş yap</button>
+      </div>
+
+      <div class="sifremiUnuttum">
+          <a class="sifremiUnuttum" href="">Şifremi unuttum</a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="tab-2" class="tab-content">
+
+        <div class="row">
+            <div class="col-7">
+                <p class="infoYazi">E-posta adresi ile üye ol</p>
+            </div>
+
+            <div class="col-5 hr">
+                <hr>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-6">
+                <input id="uyeOlAd" class="uyeOlAd" type="text" placeholder="Ad" maxlength="24">
+                <p id="uyariYaziAd" class="uyariYaziAd"></p>
+            </div>
+
+              <div class="col-6">
+                <input id="uyeOlSoyad" class="uyeOlSoyad" type="text" placeholder="Soyad" maxlength="24">
+                <p id="uyariYaziSoyad" class="uyariYaziSoyad"></p>
+            </div>
+        </div>
+
+
+          <div class="epostaGiris">
+          <input id="uyeOlEposta" class="eposta" type="email" placeholder="E-posta adresi">
+          <p id="uyariYaziEposta" class="uyariYaziEposta"></p>
+
+      </div>
+
+      <div class="row sifreGiris">
+        <div class="col-10">
+          <input id="uyeOlSifre" class="sifre" type="password" placeholder="Şifre">
+           <p id="uyariYaziSifre" class="uyariYaziSifre"></p>
+        </div>
+          <div class="col-2">
+            <img id="uyeEye" class="eye" src="images/eye.png" alt="">
+         
+          </div>
+      </div>
+
+       <div class="row sifreGiris">
+        <div class="col-10">
+          <input id="uyeOlSifreOnay" class="sifre" type="password" placeholder="Şifre Onayı">
+           <p id="uyariYaziOnaySifre" class="uyariYaziOnaySifre"></p>
+        </div>
+          <div class="col-2">
+            <img id="uyeEyeOnay" class="eye" src="images/eye.png" alt="">
+         
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-2">
+          <input id="checkbox" class="checkbox" type="checkbox" onclick="checkBox()">
+        </div>
+
+        <div class="col-10">
+          <p class="rizaMetni">Önemli kampanyalardan haberdar olmak için <a class="rizaMetniLink" href=""><b>Rıza Metni</b></a> kapsamında elektronik ileti almak istiyorum.</p>
+        </div>
+      </div>
+
+      <div>
+          <button id="uyeOlBtn" class="uyeOlBtn">Üye Ol</button>
+
+      </div>
+
+      
+    </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+
+
+
+<script src="js/adjust.js"></script>
